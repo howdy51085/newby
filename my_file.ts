@@ -354,3 +354,14 @@ async function getLimitProduct(limit: number, offset: number) {
     console.error("❌ Connection failed:", err);
   }
 }
+// async function getLimitProduct(limit: number, offset: number) {
+//   try {
+//     const res = await pool.query(
+//       `SELECT * FROM product limit ${limit} offset ${offset} ;`
+//     );
+//     console.log("✅ Connected! Result:", res.rows);
+//     return res.rows;
+//   } catch (err) {
+//     console.error("❌ Connection failed:", err);
+//   }
+// }
